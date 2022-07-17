@@ -1,4 +1,4 @@
 FROM openjdk:8
-    ADD target/java-jenkins-docker.jar java-jenkins-docker.jar
-    ENTRYPOINT ["java", "-jar","java-jenkins-docker.jar"]
+    ADD target/jenkins-git-integration.war jenkins-git-integration.war
+    ENTRYPOINT ["java", "-jar","jenkins-git-integration.war"]
     EXPOSE 8080
